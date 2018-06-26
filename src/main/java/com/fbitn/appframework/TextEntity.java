@@ -12,4 +12,6 @@ public class TextEntity extends Entity {
 		this.value = value;
 		this.entityType = EntityType.TEXT;
 	}
+	
+	public TextEntity() {super();}
 }

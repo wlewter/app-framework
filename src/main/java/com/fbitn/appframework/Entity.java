@@ -19,6 +19,8 @@ public class Entity {
 	private boolean required;
 	protected EntityType entityType;
 	
+	public Entity() {}
+	
 	public Entity(String name, String label, Integer order, boolean required) {
 		this.name = name;
 		this.label = label;
