@@ -1,4 +1,4 @@
-package com.fbitn.appframework;
+package com.fbitn.appframework.model;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;

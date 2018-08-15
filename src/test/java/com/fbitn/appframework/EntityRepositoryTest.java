@@ -7,6 +7,12 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.fbitn.appframework.model.Entity;
+import com.fbitn.appframework.model.RadioEntity;
+import com.fbitn.appframework.model.TextEntity;
+import com.fbitn.appframework.repository.EntityMemoryRepo;
+import com.fbitn.appframework.repository.EntityRepository;
+
 public class EntityRepositoryTest {
 
 	private EntityRepository entityRepo;

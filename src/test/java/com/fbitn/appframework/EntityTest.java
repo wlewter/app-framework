@@ -9,6 +9,10 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.fbitn.appframework.model.Entity;
+import com.fbitn.appframework.model.RadioEntity;
+import com.fbitn.appframework.model.TextEntity;
+
 public class EntityTest {
 
 	private List<Entity> fields;

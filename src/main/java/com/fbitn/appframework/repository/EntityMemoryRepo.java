@@ -1,8 +1,10 @@
-package com.fbitn.appframework;
+package com.fbitn.appframework.repository;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+
+import com.fbitn.appframework.model.Entity;
 
 public class EntityMemoryRepo implements EntityRepository {
 

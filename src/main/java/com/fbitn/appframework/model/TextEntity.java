@@ -1,4 +1,4 @@
-package com.fbitn.appframework;
+package com.fbitn.appframework.model;
 
 import lombok.Getter;
 

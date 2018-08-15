@@ -5,6 +5,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import com.fbitn.appframework.model.RadioEntity;
+import com.fbitn.appframework.model.TextEntity;
+import com.fbitn.appframework.repository.EntityMemoryRepo;
+import com.fbitn.appframework.repository.EntityRepository;
+
 import lombok.extern.slf4j.Slf4j;
 
 @SpringBootApplication
