@@ -1,4 +1,4 @@
-package com.fbitn.appframework.model;
+package com.fbitn.appframework.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
@@ -15,17 +15,13 @@ public class Entity {
 
 	private String name;
 	private String label;
-	private Integer order;
-	private boolean required;
 	protected EntityType entityType;
 	
 	public Entity() {}
 	
-	public Entity(String name, String label, Integer order, boolean required) {
+	public Entity(String name, String label) {
 		this.name = name;
 		this.label = label;
-		this.order = order;
-		this.required = required;
 	}
 
 	@Override

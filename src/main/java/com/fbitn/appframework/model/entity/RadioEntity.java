@@ -1,4 +1,4 @@
-package com.fbitn.appframework.model;
+package com.fbitn.appframework.model.entity;
 
 import lombok.Getter;
 
@@ -12,8 +12,8 @@ public class RadioEntity extends Entity {
 	
 	public RadioEntity() {super();}
 	
-	public RadioEntity(String name, String label, Integer order, boolean required, String option1Label, String option1Value, String option2Label, String option2Value) {
-		super(name, label, order, required);
+	public RadioEntity(String name, String label, String option1Label, String option1Value, String option2Label, String option2Value) {
+		super(name, label);
 		this.option1Label = option1Label;
 		this.option1Value = option1Value;
 		this.option2Label = option2Label;

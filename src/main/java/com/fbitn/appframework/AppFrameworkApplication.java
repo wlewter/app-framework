@@ -5,8 +5,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import com.fbitn.appframework.model.RadioEntity;
-import com.fbitn.appframework.model.TextEntity;
+import com.fbitn.appframework.model.entity.RadioEntity;
+import com.fbitn.appframework.model.entity.TextEntity;
 import com.fbitn.appframework.repository.EntityMemoryRepo;
 import com.fbitn.appframework.repository.EntityRepository;
 
@@ -30,8 +30,8 @@ public class AppFrameworkApplication {
 		
 		return args -> {
 			log.info("loading default data");
-			entityRepo.insertOne(new TextEntity("name", "Enter your name:", 1, true, ""));
-			entityRepo.insertOne(new RadioEntity("discount", "Should apply discount?", 2, true, "Yes", "Y", "No", "N"));			
+			entityRepo.insertOne(new TextEntity("name", "Enter your name:", ""));
+			entityRepo.insertOne(new RadioEntity("discount", "Should apply discount?", "Yes", "Y", "No", "N"));			
 			log.info("finished loading default data");
 			
 			

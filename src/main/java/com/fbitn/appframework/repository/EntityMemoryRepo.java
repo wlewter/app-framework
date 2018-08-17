@@ -1,10 +1,9 @@
 package com.fbitn.appframework.repository;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
-import com.fbitn.appframework.model.Entity;
+import com.fbitn.appframework.model.entity.Entity;
 
 public class EntityMemoryRepo implements EntityRepository {
 
@@ -16,7 +15,6 @@ public class EntityMemoryRepo implements EntityRepository {
 	
 	@Override
 	public List<Entity> getAll() {
-		fields.sort(Comparator.comparingInt(Entity::getOrder));
 		return fields;
 	}
 

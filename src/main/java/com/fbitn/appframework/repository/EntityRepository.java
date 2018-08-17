@@ -2,7 +2,7 @@ package com.fbitn.appframework.repository;
 
 import java.util.List;
 
-import com.fbitn.appframework.model.Entity;
+import com.fbitn.appframework.model.entity.Entity;
 
 public interface EntityRepository {
 

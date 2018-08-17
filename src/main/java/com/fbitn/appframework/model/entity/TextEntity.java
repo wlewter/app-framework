@@ -1,4 +1,4 @@
-package com.fbitn.appframework.model;
+package com.fbitn.appframework.model.entity;
 
 import lombok.Getter;
 
@@ -7,8 +7,8 @@ public class TextEntity extends Entity {
 
 	private String value;
 	
-	public TextEntity(String name, String label, Integer order, boolean required, String value) {
-		super(name, label, order, required);
+	public TextEntity(String name, String label, String value) {
+		super(name, label);
 		this.value = value;
 		this.entityType = EntityType.TEXT;
 	}
