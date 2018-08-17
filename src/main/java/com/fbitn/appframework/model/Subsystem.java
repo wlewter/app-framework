@@ -1,4 +1,4 @@
-package com.fbitn.appframework.model.system;
+package com.fbitn.appframework.model;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class System {
+public class Subsystem {
 
 	private String name;
 	private List<Page> pages;

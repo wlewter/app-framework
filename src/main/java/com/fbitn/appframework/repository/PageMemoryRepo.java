@@ -17,6 +17,15 @@ public class PageMemoryRepo implements PageRepository {
 	public List<Page> getAll() {
 		return pages;
 	}
+	
+	@Override
+	public void insertOne(Page page) {
+		pages.add(page);
+	}
 
+	@Override
+	public Page getOne(String name) {
+		return pages.stream().filter(e -> e.getName().equalsIgnoreCase(name)).findFirst().get();
+	}
 
 }
