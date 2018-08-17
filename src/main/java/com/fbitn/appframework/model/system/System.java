@@ -1,16 +1,18 @@
-package com.fbitn.appframework.model.view;
+package com.fbitn.appframework.model.system;
 
 import java.util.List;
+
+import com.fbitn.appframework.model.view.Page;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Getter
-@AllArgsConstructor
 @NoArgsConstructor
-public class Page {
+@AllArgsConstructor
+public class System {
 
 	private String name;
-	private List<PageEntity> entities;
+	private List<Page> pages;
 }
